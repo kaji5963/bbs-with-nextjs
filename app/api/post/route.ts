@@ -6,3 +6,17 @@ export async function GET(req: Request) {
 
   return NextResponse.json(allBbsPosts);
 }
+
+// export async function POST(req: Request) {
+//   const { username, title, content } = await req.json();
+
+//   const postData = await db.post.create({
+//     data: {
+//       username,
+//       title,
+//       content,
+//     },
+//   });
+
+//   return NextResponse.json(postData);
+// }
